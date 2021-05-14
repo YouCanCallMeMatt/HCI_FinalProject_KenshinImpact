@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
+
+:root {
+    --cyellow: #f9ed69;
+    --corange: #f08a5d;
+    --cred: #b83b5e;
+    --cpurple: #6a2c70;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
