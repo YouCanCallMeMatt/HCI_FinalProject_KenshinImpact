@@ -1,1 +1,41 @@
 @import "./style.css";
+
+section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.hero {
+  color: white;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  display: none;
+}
+
+.hero .active {
+  display: block;
+}
+
+.hero .text-container {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero .btn {
+  background-image: url("../Assets/Pages/home/play_button.png");
+  padding: 20px 15px;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+}

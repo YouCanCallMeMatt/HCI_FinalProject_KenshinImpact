@@ -1,13 +1,92 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
-    --cyellow: #f9ed69;
-    --corange: #f08a5d;
-    --cred: #b83b5e;
-    --cpurple: #6a2c70;
+  --cyellow: #f9ed69;
+  --corange: #f08a5d;
+  --cred: #b83b5e;
+  --cpurple: #6a2c70;
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.dm-text {
+  font-family: "DM Serif Text";
+}
+.roboto-text {
+  font-family: "Roboto", sans-serif;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 5vw;
+  align-items: center;
+  box-shadow: 0px 5px 20px rgb(179, 179, 179);
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.menu-container {
+  background-color: white;
+  width: 15vw;
+  /* border: solid 1px black; */
+  z-index: 9999;
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  padding: 30px;
+  display: none;
+}
+
+.menu-container .tab {
+  color: var(--cpurple);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+/* end navbar */
+/* footer */
+.footer-container {
+  width: 100%;
+  background-color: #565656;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.footer-container .column {
+  width: 350px;
+}
+
+.footer-container .socmed img {
+  width: 50px;
+  margin: 0 5px;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0px;
+  background-color: black;
 }
