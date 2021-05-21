@@ -54,10 +54,10 @@
 .modal-content 
 {
     margin: auto;
-    margin-top: 15vh;
+    margin-top: 5%;
     display: block;
-    width: 90%;
-    max-width: 1000px;
+    height: 70%;
+    /* max-width: 1000px; */
     animation-name: zoom;
     animation-duration: 0.6s;
 }
