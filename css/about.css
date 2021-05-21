@@ -1,1 +1,17 @@
 @import "./style.css";
+
+#title
+{
+    margin: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title h1
+{
+    color: #F0895C;
+    font-size: 4rem;
+    font-weight: normal;
+}
+  
