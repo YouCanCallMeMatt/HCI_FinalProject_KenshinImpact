@@ -1,17 +1,99 @@
 @import "./style.css";
 
-.title
+h1
 {
-    margin-top: 8vh;
+    color: #F0895C;
+    font-size: 4rem;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) 
+{
+    .title-1 h1 {
+        font-size: 2.3rem;
+    }
+    .title-2 h1{
+        font-size: 1.5rem;
+    }
+}
+
+.title-1
+{
+    padding: 10vh 10vh 0vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.title h1
+.title-1 img
 {
-    color: #F0895C;
-    font-size: 4rem;
-    font-weight: normal;
+    padding: 0;
+    width: 100%;
+    max-width: 500px;
 }
-  
+
+.cover-image
+{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover-image img
+{
+    width: 100%;
+    max-width: 80vw;
+}
+
+.cover-text
+{
+    display: flex;
+    margin-top: -30%;
+}
+
+.cover-text img
+{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    max-width: 700px;
+    transform: translate(20%, 10%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 5));
+}
+
+.textbox-1
+{
+    width: 45%;
+    max-width: 1000px;
+    padding: 2vw;
+    background: rgba(255, 227, 128, 0.71);
+    box-shadow: -14px 9px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 21px;
+    align-self: end;
+    justify-content: center;
+}
+
+.textbox-1 p
+{
+    text-align: center;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.title-2
+{
+    padding: 10vw;
+    display: flex;
+    align-items: center;
+}
+
+.title-2 img
+{
+    margin-left: 2vw;
+    width: 100%;
+    overflow: hidden;
+}
