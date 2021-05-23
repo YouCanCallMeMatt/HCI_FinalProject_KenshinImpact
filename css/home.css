@@ -8,7 +8,7 @@ section {
   color: white;
   position: relative;
   height: 550px;
-  height: 70vh;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -73,4 +73,64 @@ section {
 
 .hero .next {
   right: 2%;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.about .container {
+  width: 450vw;
+  height: 450px;
+  position: relative;
+}
+
+.about .character {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.about .title {
+  font-size: 2.2rem;
+  color: var(--cpurple);
+  margin-bottom: 10px;
+}
+
+.about .title-cont img {
+  width: 40%;
+}
+
+.about .container:last-child {
+  text-align: center;
+}
+
+.about .container:last-child .text-roboto {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.about a {
+  color: var(--corange);
+}
+
+.screenshots {
+  background-image: url("../Assets/Pages/home/screenshots_bg.jpg");
+  background-position: top;
+  padding: 150px 0;
+}
+
+.screenshots .title-cont {
+  color: white;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.screenshots .title-cont img {
 }
