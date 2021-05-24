@@ -109,7 +109,7 @@ section {
   text-align: center;
 }
 
-.about .container:last-child .text-roboto {
+.about .container:last-child .roboto-text {
   width: 60%;
   margin: 0 auto;
   padding-bottom: 100px;
@@ -123,14 +123,44 @@ section {
   background-image: url("../Assets/Pages/home/screenshots_bg.jpg");
   background-position: top;
   padding: 150px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .screenshots .title-cont {
   color: white;
   width: 100%;
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-align: center;
+  margin-bottom: 50px;
+  filter: brightness(0) invert(1);
 }
 
 .screenshots .title-cont img {
+  width: 500px;
+  margin-top: 15px;
+}
+
+.screenshots .image {
+  width: 70vw;
+  margin-bottom: 80px;
+}
+
+.screenshots .btn {
+  font-size: 1.5rem;
+  color: white;
+  background-image: url("../Assets/Pages/home/play_button.png");
+  padding: 20px 15px;
+  width: 300px;
+  height: 5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  cursor: pointer;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
