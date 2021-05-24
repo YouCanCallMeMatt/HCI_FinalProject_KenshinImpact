@@ -75,6 +75,28 @@ section {
   right: 2%;
 }
 
+.hero .dots {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  /* bottom: 30px; */
+  display: flex;
+  flex-direction: row;
+}
+
+.hero .dots li {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50px;
+  margin: 0 20px;
+}
+
+.hero .dot-active {
+  background-color: var(--cred) !important;
+}
+
 .about {
   display: flex;
   flex-direction: row;
