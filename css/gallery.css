@@ -30,6 +30,8 @@
 
 .images
 {
+    padding-left: 10vh;
+    padding-right: 10vh;
     display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
