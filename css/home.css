@@ -58,10 +58,9 @@ section {
   cursor: pointer;
 }
 
-.hero .arrow {
+.arrow {
   transform: translate(-50%, -50%);
   position: absolute;
-  top: 50%;
   min-width: 50px;
   width: 3vw;
   cursor: pointer;
@@ -69,10 +68,12 @@ section {
 
 .hero .prev {
   left: 5%;
+  top: 50%;
 }
 
 .hero .next {
   right: 2%;
+  top: 50%;
 }
 
 .hero .dots {
@@ -139,6 +140,77 @@ section {
 
 .about a {
   color: var(--corange);
+}
+
+.characters {
+  background-image: url("../Assets/Pages/home/character-bg.png");
+  background-position: bottom;
+  height: 1200px;
+}
+
+.characters .title-cont {
+  color: white;
+  width: 100%;
+  font-size: 2.2rem;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  filter: brightness(100) invert(1);
+}
+
+.characters .title-cont img {
+  width: 500px;
+  margin-top: 10px;
+}
+
+.characters .carousel {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.characters .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  border-radius: 20px;
+  width: 360px;
+  z-index: 1;
+
+  transition-property: all;
+  transition-timing-function: ease;
+  transition-duration: 1s;
+}
+
+.characters .middle {
+  opacity: 1;
+  z-index: 3;
+}
+
+.characters .left {
+  opacity: 1;
+  transform: translate(-170%, -50%);
+  width: 300px;
+  z-index: 2;
+}
+
+.characters .right {
+  opacity: 1;
+  transform: translate(70%, -50%);
+  width: 300px;
+  z-index: 2;
+}
+
+.characters .prev {
+  left: 5%;
+  top: 50%;
+}
+
+.characters .next {
+  right: 2%;
+  top: 50%;
 }
 
 .screenshots {
