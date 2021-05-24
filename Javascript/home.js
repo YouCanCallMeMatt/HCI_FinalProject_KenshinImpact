@@ -16,6 +16,7 @@ $(document).ready(function () {
 
   $(".arrow").click(function () {
     $(".slide").eq($show).removeClass("active");
+    $(".dots li").eq($show).removeClass("dot-active");
     if ($(this).hasClass("prev")) {
       $show -= 1;
     } else {
@@ -23,5 +24,6 @@ $(document).ready(function () {
     }
     $show = showCheck($show);
     $(".slide").eq($show).addClass("active");
+    $(".dots li").eq($show).addClass("dot-active");
   });
 });
