@@ -8,7 +8,7 @@ section {
   color: white;
   position: relative;
   height: 550px;
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
 }
 
@@ -194,6 +194,7 @@ section {
   transform: translate(-170%, -50%);
   width: 300px;
   z-index: 2;
+  filter: grayscale(80%);
 }
 
 .characters .right {
@@ -201,6 +202,7 @@ section {
   transform: translate(70%, -50%);
   width: 300px;
   z-index: 2;
+  filter: grayscale(80%);
 }
 
 .characters .prev {
