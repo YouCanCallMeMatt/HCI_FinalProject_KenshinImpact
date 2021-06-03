@@ -42,29 +42,27 @@ ul {
   top: 0;
   z-index: 999;
 }
-
 .menu-icon {
   cursor: pointer;
 }
-
 .menu-container {
   background-color: white;
-  width: 15vw;
+  width: 200px;
   /* border: solid 1px black; */
   z-index: 9999;
   position: fixed;
-  right: 0;
+  right: 0px;
   height: 100vh;
   padding: 30px;
   display: none;
 }
-
 .menu-container .tab {
   color: var(--cpurple);
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
 /* end navbar */
+
 /* footer */
 .footer-container {
   width: 100%;
@@ -73,13 +71,15 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
-  padding: 20px 0px;
+  
 }
 
 .footer-container .column {
   width: 350px;
+  padding: 20px 10px;
 }
 
 .footer-container .socmed img {
@@ -93,4 +93,5 @@ ul {
   width: 100%;
   padding: 20px 0px;
   background-color: black;
+  font-size: .8rem;
 }

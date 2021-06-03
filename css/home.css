@@ -14,6 +14,7 @@ section {
 
 .hero .slide {
   width: 100%;
+  height: 100%;
   display: block;
   position: absolute;
   top: 50%;
@@ -21,6 +22,7 @@ section {
   transform: translate(-50%, -50%);
   transition: opacity 3s;
   opacity: 0;
+  object-fit: cover;
 }
 
 .hero .active {
@@ -31,7 +33,7 @@ section {
 .hero .text-container {
   position: absolute;
   top: 50%;
-  left: 28%;
+  left: 30%;
   transform: translate(-50%, -50%);
   z-index: 50;
 }
@@ -49,9 +51,10 @@ section {
 .hero .btn {
   background-image: url("../Assets/Pages/home/play_button.png");
   padding: 20px 15px;
-  width: 50%;
+  width: 200px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   text-align: center;
   margin: 0 auto;
   margin-top: 50px;
@@ -59,19 +62,18 @@ section {
 }
 
 .arrow {
-  transform: translate(-50%, -50%);
+  transform: translate(0, -50%);
   position: absolute;
   min-width: 50px;
   width: 3vw;
   cursor: pointer;
 }
 
-.hero .prev {
-  left: 5%;
+.prev {
+  left: 2%;
   top: 50%;
 }
-
-.hero .next {
+.next {
   right: 2%;
   top: 50%;
 }
@@ -106,9 +108,10 @@ section {
 }
 
 .about .container {
-  width: 450vw;
+  width: 50vw;
   height: 450px;
   position: relative;
+  max-width: 1000px;
 }
 
 .about .character {
@@ -116,16 +119,18 @@ section {
   position: absolute;
   bottom: 0;
   left: 0;
+  max-width: 700px;
 }
 
-.about .title {
-  font-size: 2.2rem;
+.about .title-cont {
+  font-size: 1.5rem;
   color: var(--cpurple);
-  margin-bottom: 10px;
+  
 }
 
 .about .title-cont img {
-  width: 40%;
+  width: 300px;
+  margin-top: 10px;
 }
 
 .about .container:last-child {
@@ -145,21 +150,24 @@ section {
 .characters {
   background-image: url("../Assets/Pages/home/character-bg.png");
   background-position: bottom;
-  height: 1200px;
+  background-repeat: no-repeat;
+  padding-bottom: 400px;
+  min-height: 500px;
 }
 
 .characters .title-cont {
   color: white;
   width: 100%;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   text-align: center;
   padding-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   filter: brightness(100) invert(1);
+  position: relative;
 }
 
 .characters .title-cont img {
-  width: 500px;
+  width: 300px;
   margin-top: 10px;
 }
 
@@ -176,7 +184,8 @@ section {
   transform: translate(-50%, -50%);
   opacity: 0;
   border-radius: 20px;
-  width: 360px;
+  width: 300px;
+  /* width: 25vw; */
   z-index: 1;
 
   transition-property: all;
@@ -191,34 +200,26 @@ section {
 
 .characters .left {
   opacity: 1;
-  transform: translate(-170%, -50%);
-  width: 300px;
+  left: 30%;
+  /* width: calc(25vw - 50px); */
+  width: 250px;
   z-index: 2;
   filter: grayscale(80%);
 }
 
 .characters .right {
   opacity: 1;
-  transform: translate(70%, -50%);
-  width: 300px;
+  left: 70%;
+  /* width: calc(25vw - 50px); */
+  width: 250px;
   z-index: 2;
   filter: grayscale(80%);
-}
-
-.characters .prev {
-  left: 5%;
-  top: 50%;
-}
-
-.characters .next {
-  right: 2%;
-  top: 50%;
 }
 
 .screenshots {
   background-image: url("../Assets/Pages/home/screenshots_bg.jpg");
   background-position: top;
-  padding: 150px 0;
+  padding: 100px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -227,14 +228,14 @@ section {
 .screenshots .title-cont {
   color: white;
   width: 100%;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   text-align: center;
   margin-bottom: 50px;
   filter: brightness(0) invert(1);
 }
 
 .screenshots .title-cont img {
-  width: 500px;
+  width: 300px;
   margin-top: 15px;
 }
 
@@ -259,4 +260,58 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .about{
+    flex-direction: column-reverse;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .about .container{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hero .text-container{
+    left: 50%;
+  }
+}
+@media screen and (max-width: 762px) {
+  .characters .card{
+    left: 50% !important;
+  }
+
+}
+@media screen and (max-width: 576px) {
+  .characters .carousel{
+    height: 400px;
+  }
+  .characters .card{
+    width: 200px
+  }
+
+}
+@media screen and (max-width: 428px) {
+  .arrow{
+    min-width: 30px;
+  }
+  .hero .dots li{
+    width: 20px;
+    height: 20px;
+  }
+
+  .about .title-cont, .characters .title-cont, .screenshots .title-cont{
+    font-size: 1.3rem;
+  }
+  .about .title-cont img, .characters .title-cont img, .screenshots .title-cont img{
+    width: 200px;
+  }
+
+  .screenshots .btn{
+    font-size: 1rem;
+    width: 200px;
+  }
+
+  
 }
