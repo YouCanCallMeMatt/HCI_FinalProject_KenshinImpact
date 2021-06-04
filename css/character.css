@@ -1,1 +1,111 @@
 @import "./style.css";
+
+.title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.desc {
+    font-size: 24px;
+}
+
+.content2-right img,
+.content3-left img,
+.content4-right img,
+.content5-left img {
+    height: 400px;
+}
+
+.content1 {
+    padding-top: 20px;
+}
+
+.content1-text {
+    font-size: 4rem;
+    color: #f0895c;
+    text-align: center;
+}
+
+.content1-img {
+    width: 100%;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.content2 {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    align-items: flex-end;
+    background-color: #ddedce;
+}
+
+.content2-left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+.content3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    align-items: flex-end;
+    background-color: rgba(234, 226, 213, 0.5);
+}
+
+.content3-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.content4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    align-items: flex-end;
+    background-color: rgba(110, 28, 53, 0.5);
+}
+
+.content4-left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+.content5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    align-items: flex-end;
+    background-color: #bac6ef;
+    margin-bottom: 100px;
+}
+
+.content5-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
