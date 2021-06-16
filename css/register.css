@@ -3,13 +3,15 @@
 label {
     color: var(--cpurple);
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 15vh;
 }
 
 .content1 {
@@ -29,29 +31,72 @@ label {
 
 .content form {
     width: 40%;
+    min-width: 520px;
 }
 
 .error {
-    /* display: none; */
+    display: none;
     color: red;
     font-weight: normal;
+    font-size: 1rem;
 }
 
 #reg-form div {
     margin-top: 30px;
 }
 
-#reg-form input {
+#reg-form input[type=text], input[type=email], input[type=password] {
     width: 100%;
+    height: 7vh;
+    border-radius: 10px;
+    border: 1px solid #692C71;
+    margin: 1vh 0 1vh;
+    padding-left: 1vw;
+    font-size: 1.3rem;
 }
 
-.agree {
-    display: flex;
-    flex-direction: column;
+::placeholder{
+    color: rgba(105, 44, 113, 0.3);
 }
 
-#agree-radio {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+button{
+    margin-top: 5vh;
+    padding: 1vw 4vw;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--cpurple);
+    border-radius: 50px;
+}
+
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 762px) {
+}
+@media screen and (max-width: 576px) {
+    .content1-img-in {
+        width: 60%;
+        min-width: 300px;
+    }
+    .content1-text {
+        font-size: 2.3rem;
+    }
+    .content form {
+        width: 80%;
+    }
+    ::placeholder{
+        font-size: 1rem;
+    }
+    button{
+        padding: 2vw 8vw;
+    }
+    .content form {
+        min-width: 300px;
+    }
+}
+@media screen and (max-width: 428px) {
 }
