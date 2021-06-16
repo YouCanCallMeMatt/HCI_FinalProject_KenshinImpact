@@ -71,7 +71,9 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    width: 70%;
+    width: 100%;
+    max-width: 70vw;
+    max-height: 90vh;
     animation-name: fade;
     animation-duration: 0.6s;
 }
