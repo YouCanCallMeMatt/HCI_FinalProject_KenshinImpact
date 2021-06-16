@@ -1,1 +1,57 @@
 @import "./style.css";
+
+label {
+    color: var(--cpurple);
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content1 {
+    padding-top: 10vh;
+}
+
+.content1-text {
+    font-size: 4rem;
+    color: #f0895c;
+    text-align: center;
+}
+
+.content1-img {
+    width: 100%;
+    text-align: center;
+}
+
+.content form {
+    width: 40%;
+}
+
+.error {
+    /* display: none; */
+    color: red;
+    font-weight: normal;
+}
+
+#reg-form div {
+    margin-top: 30px;
+}
+
+#reg-form input {
+    width: 100%;
+}
+
+.agree {
+    display: flex;
+    flex-direction: column;
+}
+
+#agree-radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
