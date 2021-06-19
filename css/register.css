@@ -40,6 +40,11 @@ label {
     font-size: 1rem;
 }
 
+#reg-form{
+    width: 50vw;
+    min-width: 300px;
+}
+
 #reg-form div {
     margin-top: 30px;
 }
