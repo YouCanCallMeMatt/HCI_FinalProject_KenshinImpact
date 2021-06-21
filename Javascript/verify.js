@@ -1,13 +1,24 @@
 $(document).ready(function(){
 
-    $('button').click(function(){
-        $('.error').empty();
+    function success(res){
+        if(res){
+            alert('Register Successful.');
+            $('input').each(function(){
+                $(this).val('');
+            });
+            $( "#agree" ).prop( "checked", false );
+        }
+    }
+    
 
+    function validation(callback1){
+        var i = true;
 
         //empty validation
         $('input').each(function(){
             if( $(this).val()==''){
                 $(this).siblings('.error').append('Please fill out this field.');
+                i = false;
             }
             else{
                 $(this).siblings('.error').empty();
@@ -19,13 +30,15 @@ $(document).ready(function(){
         }
         else{
             $('#agree').parent().siblings('.error').append('Please check this field.');
+            i = false;
         }
 
         //username validation
         if($('#username-txt').val()){
-            if($('#username-txt').length < 3){
+            if($('#username-txt').val().length < 3){
                 $('#username-txt').siblings('.error').append('Please input minimum of 3 characters.');
-           }
+                i = false;
+            }
            else{
                 $('#username-txt').siblings('.error').empty();
            }
@@ -38,6 +51,7 @@ $(document).ready(function(){
        if ($('#email-txt').val()){
         if(atIndex < 1 || dotIndex <= atIndex + 2 || dotIndex == email.length - 1 ){
             $('#email-txt').siblings('.error').append('Please input a valid email address consist of a @ and .');
+            i = false;
         }
         else{
             $('#email-txt').siblings('.error').empty();
@@ -51,6 +65,7 @@ $(document).ready(function(){
        if($('#password-txt').val()){
            if(passLen < 8 || !isNaN(pass)){
             $('#password-txt').siblings('.error').append('Password must consist of at least 8 characters and an alphabet.');
+            i = false;
         }
            else{
             $('#password-txt').siblings('.error').empty();
@@ -62,14 +77,27 @@ $(document).ready(function(){
        if($('#confirm-password-txt').val()){
            if($('#confirm-password-txt').val() != $('#password-txt').val()){
                 $('#confirm-password-txt').siblings('.error').append('Password confirmation does not match.');
+                i = false;
             }
             else{
                 $('#confirm-password-txt').siblings('.error').empty();
+                
             }
         }
 
+        callback1(i);
+
+    }
+
+    $('#reg-form').submit(function(e){
+        e.preventDefault();
+        $('.error').empty();
+
+        validation(success);
+        // success();
+        
 
         
-    })
+    });
 
 });
